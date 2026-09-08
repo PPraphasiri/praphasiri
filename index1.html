@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<style>
+*{ 	
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+
+
+}
+article{
+	background-color:yellow;
+	padding:5px
+	flex:4;
+}
+footer{
+	background-color:green;
+	padding:25px;
+	text-align:center;
+	color:#F5FFFA;
+}
+
+section{display:flex;}
+
+a:link{
+        color:red;
+	text-decoration:none; 
+	background-color: #F0F4BF;
+	display:block;
+	width:100%px;
+	padding:10px;
+ 	}
+a:visited{
+        color:green;
+ 	}
+a:hover{
+        color:orange;
+	background-color: #F6E1C3;
+ 	}
+a:active{
+        color:brown;
+ 	}
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,"Noto Sans Thai",sans-serif;background:white}
+.container{width:1024px;margin:0 auto;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;}
+header{
+	background-image:url(images/header.jpg);height:256px;}
+nav{
+	flex:1;
+}
+header h1{font-size:42px;text-align:center}
+section{display:flex}
+nav{width:210px;flex:none;background:#f0f4bf}
+nav button{border:0;border-bottom:1px solid #e6e6a8;color:#d83225;background:#f0f4bf;display:block;width:100%;padding:18px 12px;font-size:18px;text-align:left;line-height:1.35;cursor:pointer}
+nav button:hover,nav button.active{color:#168b2f;background:#e2ef9b;font-weight:bold}
+article{flex:1;background:#fff900;padding:18px 20px 28px;min-height:430px}
+article h1{color:#111;font-size:31px;margin-bottom:12px}
+article h2{color:#b71c1c;font-size:23px;margin:13px 0 8px}
+article p{font-size:17px;line-height:1.75;margin-bottom:9px}
+.chinese{font-size:24px;font-weight:bold}
+.card{background:rgba(255,255,255,.45);border-left:5px solid #d92d2d;padding:10px 14px;margin:10px 0}
+.page{display:none}.page.show{display:block}
+footer{background:green;padding:22px;text-align:center;color:white;line-height:1.7;font-size:16px}
+@media(max-width:600px){header{height:150px}header h1{font-size:30px}nav{width:38%}nav button{font-size:14px;padding:14px 8px}article{padding:14px}article h1{font-size:25px}article p{font-size:15px}}
+</style>
+<meta charset="utf-8">
+<title>ภาษาจีน</title>
+</head>
+<body>
+<div class="container">
+<header></header>
+<section>
+<nav>
+<button class="menu active" onclick="showPage('basic',this)">พื้นฐานภาษาจีน</button>
+<button class="menu" onclick="showPage('pinyin',this)">พินอิน (Pinyin)</button>
+<button class="menu" onclick="showPage('tone',this)">วรรณยุกต์ภาษาจีน</button>
+<button class="menu" onclick="showPage('greeting',this)">คำทักทายภาษาจีน</button>
+<button class="menu" onclick="showPage('number',this)">ตัวเลขภาษาจีน</button>
+</nav>
+
+<article>
+<div id="basic" class="page show">
+<img src="images/P1.jpg" style="width:500px;">
+<h1>พื้นฐานภาษาจีน</h1>
+<h2>ภาษาจีน 中文 (Zhōngwén)</h2>
+<p>ภาษาจีนเป็นภาษาที่มีผู้ใช้จำนวนมากทั่วโลก และมีความสำคัญต่อการสื่อสาร การศึกษา การค้า การท่องเที่ยว และการทำงาน</p>
+<div class="card"><p class="chinese">中文 (Zhōngwén) = ภาษาจีน</p><p>普通话 (Pǔtōnghuà) = ภาษาจีนกลางมาตรฐาน</p></div>
+<h2>สิ่งที่ควรเรียนรู้เบื้องต้น</h2>
+<p>ผู้เริ่มเรียนควรรู้จักตัวอักษรจีน พินอิน วรรณยุกต์ และคำศัพท์พื้นฐาน เพื่อพัฒนาการอ่าน การฟัง การพูด และการเขียน</p>
+<h2>ตัวอย่างคำศัพท์</h2>
+<p>你好 (Nǐ hǎo) = สวัสดี<br>谢谢 (Xièxie) = ขอบคุณ<br>再见 (Zàijiàn) = ลาก่อน</p>
+</div>
+
+<div id="pinyin" class="page">
+<img src="images/P2.jpg" style="width:505px;">
+<h1>พินอิน (Pinyin)</h1>
+<h2>พินอิน 拼音 (Pīnyīn)</h2>
+<p>   “พินอิน” (拼音) คือ ระบบการเทียบเสียงในภาษาจีนกลาง (普通话) ที่ยืมตัวอักษรโรมันมาใช้ในการช่วยออกเสียงตัวอักษรจีน  เพื่อให้ผู้เรียนภาษาจีนสามารถออกเสียงตัวอักษรจีนได้ง่ายขึ้น เนื่องจากอักษรจีนเป็นอักษรภาพ ไม่มีสระ และวรรณยุกต์ ทำให้การจำเสียงอ่านแต่ละตัวนั้นยากสำหรับผู้ที่เริ่มเรียน แม้กระทั่งคนจีนเองก็ต้องเริ่มเรียนภาษาจีนจากพินอินก่อนจะไปเรียนอักษรจีนด้วยเช่นกัน  โดยพินอินจะอิงการออกเสียงจากภาษาจีนกลางเป็นมาตรฐานซึ่งแตกต่างไปจากการออกเสียงในภาษาอังกฤษ พินอินประกอบไปด้วย 3 ส่วน ที่ใช้ในการออกเสียง ดังนี้</p>
+<div class="card">
+<p> เสียงพยัญชนะ มีทั้งหมด 23 เสียง</p>
+<p> เสียงสระ มีทั้งหมด 36 เสียง</p>
+<p> เสียงวรรณยุกต์ มีทั้งหมด 5 เสียง 4 รูป</p>
+</div>
+<h2>องค์ประกอบของพินอิน</h2>
+<p>พยัญชนะต้น (声母 - Shēngmǔ): มีทั้งหมด 21 หรือ 23 เสียง (ตามวิธีนับ) เช่น b, p, m, f ทำหน้าที่เป็นเสียงพยัญชนะแรกของพยางค์</p>
+<p>สระ (韵母 - Yùnmǔ): มีทั้งหมด 36 เสียง แบ่งเป็นสระเดี่ยว (เช่น a, o, e, i, u, ü) และสระผสม (เช่น ai, ao, an) ทำหน้าที่เป็นเสียงหลักของพยางค์</p>
+<p>เสียงวรรณยุกต์ (声调 - Shēngdiào): มี 4 เสียงหลัก (เสียง 1 ¯, เสียง 2 ˊ, เสียง 3 ˇ, เสียง 4 ˋ) และเสียงเบาอีก 1 เสียง ช่วยกำหนดความหมายของคำ</p>
+</div>
+
+
+<div id="tone" class="page">
+<img src="images/P3.jpg" style="width:500px;">
+<h1>วรรณยุกต์ภาษาจีน</h1>
+<h2>วรรณยุกต์ 声调 (Shēngdiào)</h2>
+<p>ภาษาจีนกลางมีวรรณยุกต์หลัก 4 เสียง และเสียงเบา (轻声) การเปลี่ยนวรรณยุกต์อาจทำให้ความหมายของคำเปลี่ยนไป</p>
+<p>เสียงที่ 1 จะเทียบได้กับเสียงสามัญในภาษาไทย </p>
+<p>เสียงที่ 2 จะเทียบได้กับเสียงจัตวาในภาษาไทย </p>
+<p>เสียงที่ 3 จะเทียบได้กับเสียงเอกในภาษาไทย </p>
+<p>เสียงที่ 4 จะเทียบได้กับเสียงโทในภาษาไทย </p>
+<p>เสียงเบา จะมีการออกเสียงคล้ายกับเสียงที่ 1 แต่ออกเพียงครึ่งเสียง หรือสั้นกว่า </p>
+<div class="card">
+<p class="chinese">เสียงที่ 1: mā 妈</p>
+<p class="chinese">เสียงที่ 2: má 麻</p>
+<p class="chinese">เสียงที่ 3: mǎ 马</p>
+<p class="chinese">เสียงที่ 4: mà 骂</p>
+</div>
+<p>การฝึกออกเสียงและฟังเจ้าของภาษาจะช่วยให้แยกความแตกต่างของวรรณยุกต์ได้ดีขึ้น</p>
+</div>
+
+<div id="greeting" class="page">
+<img src="images/P4.jpg" style="width:500px;">
+<h1>คำทักทายภาษาจีน</h1>
+<h2>คำทักทาย 常用问候语</h2>
+<div class="card">
+<p class="chinese">你好 (Nǐ hǎo) = สวัสดี</p>
+<p class="chinese">早上好 (Zǎoshang hǎo) = สวัสดีตอนเช้า</p>
+<p class="chinese">晚上好 (Wǎnshang hǎo) = สวัสดีตอนเย็น</p>
+<p class="chinese">再见 (Zàijiàn) = ลาก่อน</p>
+<p class="chinese">谢谢 (Xièxie) = ขอบคุณ</p>
+</div>
+<h2>ตัวอย่างประโยค</h2>
+<p class="chinese">你好！你好吗？<br>Nǐ hǎo! Nǐ hǎo ma?</p>
+<p>แปลว่า “สวัสดี! คุณสบายดีไหม?”</p>
+</div>
+
+<div id="number" class="page">
+<img src="images/P5.jpg" style="width:500px;">
+<h1>ตัวเลขภาษาจีน</h1>
+<h2>ตัวเลข 数字 (Shùzì)</h2>
+<div class="card">
+<p class="chinese">一 (yī) = 1　 二 (èr) = 2　 三 (sān) = 3</p>
+<p class="chinese">四 (sì) = 4　 五 (wǔ) = 5　 六 (liù) = 6</p>
+<p class="chinese">七 (qī) = 7　 八 (bā) = 8　 九 (jiǔ) = 9</p>
+<p class="chinese">十 (shí) = 10</p>
+<p class="chinese">100: (yìbǎi) ร้อย</p>
+<p class="chinese">1,000:(qiān) พัน</p>
+<p class="chinese">10,000: (wàn) หมื่น</p>
+</div>
+<h2>ตัวอย่าง</h2>
+<p>十二 (shí'èr) = 12<br>二十 (èrshí) = 20<br>二十五 (èrshíwǔ) = 25</p>
+</div>
+</article>
+</section>
+
+<footer>จัดทำโดย นางสาวประภาศิริ สกุเกตุ ชั้น ม.6/8 เลขที่ 18<br>โรงเรียนรัตนราษฎร์บำรุง</footer>
+</div>
+
+<script>
+function showPage(id,button){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('show'));
+  document.getElementById(id).classList.add('show');
+  document.querySelectorAll('.menu').forEach(b=>b.classList.remove('active'));
+  button.classList.add('active');
+}
+</script>
+</body>
+</html>
