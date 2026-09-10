@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<style>
+*{ 	
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+
+
+.container{width:1024px;margin:0 auto;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;}
+header{
+	background-image:url(images/header.jpg);height:256px;}
+nav{
+	flex:1;
+}
+article{
+	background-color:yellow;
+	padding:5px
+	flex:4;
+}
+footer{
+	background-color:green;
+	padding:25px;
+	text-align:center;
+	color:#F5FFFA;
+}
+
+section{display:flex;}
+
+a:link{
+        color:red;
+	text-decoration:none; 
+	background-color: #F0F4BF;
+	display:block;
+	width:100%px;
+	padding:10px;
+ 	}
+a:visited{
+        color:green;
+ 	}
+a:hover{
+        color:orange;
+	background-color: #F6E1C3;
+ 	}
+a:active{
+        color:brown;
+ 	}
+
+</style>
+<meta charset="utf-8">
+<title>ภาษาจีน</title>
+</head>
+<body>
+<div class="container">
+<header></header>
+<section>
+<nav>
+<button class="menu active" onclick="showPage('basic',this)">พื้นฐานภาษาจีน</button>
+<button class="menu" onclick="showPage('pinyin',this)">พินอิน (Pinyin)</button>
+<button class="menu" onclick="showPage('tone',this)">วรรณยุกต์ภาษาจีน</button>
+<button class="menu" onclick="showPage('greeting',this)">คำทักทายภาษาจีน</button>
+<button class="menu" onclick="showPage('number',this)">ตัวเลขภาษาจีน</button>
+</nav>
+
+</nav>
+<article>
+<div id="pinyin" class="page">
+<img src="images/P2.jpg" style="width:505px;">
+<h1>พินอิน (Pinyin)</h1>
+<h2>พินอิน 拼音 (Pīnyīn)</h2>
+<p>   “พินอิน” (拼音) คือ ระบบการเทียบเสียงในภาษาจีนกลาง (普通话) ที่ยืมตัวอักษรโรมันมาใช้ในการช่วยออกเสียงตัวอักษรจีน  เพื่อให้ผู้เรียนภาษาจีนสามารถออกเสียงตัวอักษรจีนได้ง่ายขึ้น เนื่องจากอักษรจีนเป็นอักษรภาพ ไม่มีสระ และวรรณยุกต์ ทำให้การจำเสียงอ่านแต่ละตัวนั้นยากสำหรับผู้ที่เริ่มเรียน แม้กระทั่งคนจีนเองก็ต้องเริ่มเรียนภาษาจีนจากพินอินก่อนจะไปเรียนอักษรจีนด้วยเช่นกัน  โดยพินอินจะอิงการออกเสียงจากภาษาจีนกลางเป็นมาตรฐานซึ่งแตกต่างไปจากการออกเสียงในภาษาอังกฤษ พินอินประกอบไปด้วย 3 ส่วน ที่ใช้ในการออกเสียง ดังนี้</p>
+<div class="card">
+<p> เสียงพยัญชนะ มีทั้งหมด 23 เสียง</p>
+<p> เสียงสระ มีทั้งหมด 36 เสียง</p>
+<p> เสียงวรรณยุกต์ มีทั้งหมด 5 เสียง 4 รูป</p>
+</div>
+<h2>องค์ประกอบของพินอิน</h2>
+<p>พยัญชนะต้น (声母 - Shēngmǔ): มีทั้งหมด 21 หรือ 23 เสียง (ตามวิธีนับ) เช่น b, p, m, f ทำหน้าที่เป็นเสียงพยัญชนะแรกของพยางค์</p>
+<p>สระ (韵母 - Yùnmǔ): มีทั้งหมด 36 เสียง แบ่งเป็นสระเดี่ยว (เช่น a, o, e, i, u, ü) และสระผสม (เช่น ai, ao, an) ทำหน้าที่เป็นเสียงหลักของพยางค์</p>
+<p>เสียงวรรณยุกต์ (声调 - Shēngdiào): มี 4 เสียงหลัก (เสียง 1 ¯, เสียง 2 ˊ, เสียง 3 ˇ, เสียง 4 ˋ) และเสียงเบาอีก 1 เสียง ช่วยกำหนดความหมายของคำ</p>
+</div>
+
+</article>
+</section>
+<footer><p>จัดทำโดย นางสาวประภาศิริ  สกุเกตุ ชั้นม.6/8 เลขที่18
+<br>โรงเรียนรัตนราษฎร์บำรุง</p></footer>
+</div>
+</body>
+</html>
